@@ -22,23 +22,22 @@ python-dotenv
 prometheus-flask-exporter
 ```
 <br />
-   
-2. Construir o Diagrama para entender o dominio do problema:
+
+2. Construir o diagrama para entender o domínio do problema:
 
 ![DFD](https://github.com/gustavogss/task-manager/blob/main/images/dfd.png)
 <hr>
 
 ### ETAPA 2: DESENVOLVIMENTO DO SISTEMA
 
-***Branchs***: 
-- master: produção
-- development: desenvolvimento
-- staging: homologação
+**Branches:**
+- `master`: produção  
+- `development`: desenvolvimento  
+- `staging`: homologação
 
-
-***Ferramentas Utilizadas***: 
+**Ferramentas Utilizadas:**
 - Visual Studio Code
-- Gitlab
+- GitLab
 - Docker
 - Python
 - Pytest
@@ -47,40 +46,29 @@ prometheus-flask-exporter
 - Bandit
 - OWASP Dependency-Check
 - OWASP ZAP
-- Hydra 
+- Hydra
 - Prometheus
 - Grafana
-  
-<br />
 
-1. Implementação do Dockerfile
+1. Implementação do Dockerfile:
 
 ![dockerfile](https://github.com/gustavogss/task-manager/blob/main/images/dockerfile.png)
-
-<br />
-
 
 2. Aplicação executada na porta 5000:
 
 ![app](https://github.com/gustavogss/task-manager/blob/main/images/app.png)
-
 <hr>
 
+### ETAPA 3: IMPLEMENTAÇÃO DE UM PIPELINE CI/CD
 
-### ETAPA3: IMPLEMENTAÇÃO DE UM PIPELINE CI/CD
-
-1. Implementação do build e deploy na pipeline
+1. Implementação do build e deploy na pipeline:
 
 ![gitlab](https://github.com/gustavogss/task-manager/blob/main/images/gitlabci.png)
 
-<br />
+2. Pipeline em execução no GitLab:
 
-2. Pipeline em execução no gitlab:
-
-![pipeline-inital](https://github.com/gustavogss/task-manager/blob/main/images/pipeline-initial.png)
-
+![pipeline-initial](https://github.com/gustavogss/task-manager/blob/main/images/pipeline-initial.png)
 <hr>
-
 
 ### ETAPA 4: ANÁLISE ESTÁTICA DE CÓDIGO (SAST)
 
@@ -88,39 +76,29 @@ prometheus-flask-exporter
 
 ![bandit](https://github.com/gustavogss/task-manager/blob/main/images/bandit.png)
 
-<br />
-
 2. Artefato gerado mostrando dados sensíveis expostos na aplicação:
 
-![artfect_bandit](https://github.com/gustavomob/devsecops-taskmanager/blob/main/images/artefact-zap-attack-tools.png)
-
-<br />
+![artefact_bandit](https://github.com/gustavogss/task-manager/blob/main/images/artefact-zap-attack-tools.png)
 
 3. Correção no código da falha capturada pelo Bandit:
 
 ![fix_bandit](https://github.com/gustavogss/task-manager/blob/main/images/fixenv.png)
 
-<br />
-   
 4. Implementação do OWASP Dependency Check na pipeline:
 
 ![owasp_dependency_check](https://github.com/gustavogss/task-manager/blob/main/images/owasp-dependecy-check.png)
 
-<br />
+5. Artefato gerado com vulnerabilidades no código JavaScript:
 
-5. Artefato gerado com vulnerabilidades no código javascript:
-
-![artfect_dependency](https://github.com/gustavogss/task-manager/blob/main/images/artifect-dependency-check.png)
+![artefact_dependency](https://github.com/gustavogss/task-manager/blob/main/images/artifect-dependency-check.png)
 <hr>
 
-### ETAPA 5: ANÁLISE DINÂMICA DE SEGURANÇA  (DAST)
+### ETAPA 5: ANÁLISE DINÂMICA DE SEGURANÇA (DAST)
 
 1. Foi utilizada a aplicação Zed Attack Proxy (ZAP) para fazer uma varredura rápida na aplicação:
 
- ![zed](https://github.com/gustavogss/task-manager/blob/main/images/zap-attack-tools.png)
- 
-  <br />
-  
+![zed](https://github.com/gustavogss/task-manager/blob/main/images/zap-attack-tools.png)
+
 2. Artefato gerado mostrando as vulnerabilidades e níveis de risco:
 
 ![artefact_zed](https://github.com/gustavogss/task-manager/blob/main/images/artefact-zap-attack-tools.png)
@@ -128,28 +106,22 @@ prometheus-flask-exporter
 
 ### ETAPA 6: ENTREGA CONTÍNUA (CD)
 
-1. Implementação da etapa revisão de código na pipeline:
+1. Implementação da etapa de revisão de código na pipeline:
 
 ![review](https://github.com/gustavogss/task-manager/blob/main/images/review-pipeline.png)
 
-<br />
-   
-2. Implementação do OWASP ZAP para executar em toda pipeline na homologação: 
+2. Implementação do OWASP ZAP para executar em toda a pipeline na homologação:
 
 ![owasp_zap](https://github.com/gustavogss/task-manager/blob/main/images/dast.png)
-
 <hr>
-
 
 ### ETAPA 7: MONITORAMENTO
 
 1. Implementação do Prometheus e Grafana na produção:
 
-![prometehues_grafana](https://github.com/gustavogss/task-manager/blob/main/images/grafana-prometheus.png)
+![prometheus_grafana](https://github.com/gustavogss/task-manager/blob/main/images/grafana-prometheus.png)
 
-<br />
-   
-2. Implementação do ataque de bruta force em python:
+2. Implementação do ataque de força bruta em bash:
 
 ```
 #!/bin/bash
