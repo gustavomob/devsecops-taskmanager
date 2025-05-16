@@ -72,30 +72,37 @@ prometheus-flask-exporter
 
 2. Pipeline em execução no GitLab:
 
-![pipeline-initial](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/pipeline-initial.png)
+![pipeline-initial](https://github.com/user-attachments/assets/de446dc6-f90a-4192-a62c-e58366d52a2c)
+
+
 <hr>
 
 ### ETAPA 4: ANÁLISE ESTÁTICA DE CÓDIGO (SAST)
 
 1. Implementação do Bandit na pipeline:
+   
+![bandit-artifect](https://github.com/user-attachments/assets/f6a7f30a-d20f-41cb-a541-b2c95c493182)
 
-![bandit](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/bandit.png)
 
 2. Artefato gerado mostrando dados sensíveis expostos na aplicação:
 
-![artefact-bandit](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/artefact-zap-attack-tools.png)
+![artefact-zap-attack-tools](https://github.com/user-attachments/assets/92ed0c4f-d63e-4f4b-a281-3e8e05ded057)
+
 
 3. Correção no código da falha capturada pelo Bandit:
 
-![fix-bandit](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/fixenv.png)
+![fixenv](https://github.com/user-attachments/assets/637a10d4-24c7-47de-8d1c-e91db4f988c0)
+
 
 4. Implementação do OWASP Dependency Check na pipeline:
+   
+![owasp-dependecy-check](https://github.com/user-attachments/assets/03502964-4072-4e84-8c6b-45abab2dd431)
 
-![owasp-dependency_check](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/owasp-dependecy-check.png)
 
 5. Artefato gerado com vulnerabilidades no código JavaScript:
 
-![artefact-dependency](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/artifect-dependency-check.png)
+![artifect-dependency-check](https://github.com/user-attachments/assets/c86fa7fb-8759-4973-af40-5e5877b0c09e)
+
 <hr>
 
 ### ETAPA 5: ANÁLISE DINÂMICA DE SEGURANÇA (DAST)
