@@ -92,25 +92,25 @@ prometheus-flask-exporter
 
 2. Artefato gerado mostrando dados sensíveis expostos na aplicação:
 
-![artfect-bandit](https://github.com/gustavomob/devsecops-taskmanager/blob/main/images/artefact-zap-attack-tools.png)
+![artfect_bandit](https://github.com/gustavomob/devsecops-taskmanager/blob/main/images/artefact-zap-attack-tools.png)
 
 <br />
 
 3. Correção no código da falha capturada pelo Bandit:
 
-![fix-bandit](https://github.com/gustavogss/task-manager/blob/main/images/fixenv.png)
+![fix_bandit](https://github.com/gustavogss/task-manager/blob/main/images/fixenv.png)
 
 <br />
    
 4. Implementação do OWASP Dependency Check na pipeline:
 
-![owasp-dependency-check](https://github.com/gustavogss/task-manager/blob/main/images/owasp-dependecy-check.png)
+![owasp_dependency_check](https://github.com/gustavogss/task-manager/blob/main/images/owasp-dependecy-check.png)
 
 <br />
 
 5. Artefato gerado com vulnerabilidades no código javascript:
 
-![artfect-dependency](https://github.com/gustavogss/task-manager/blob/main/images/artifect-dependency-check.png)
+![artfect_dependency](https://github.com/gustavogss/task-manager/blob/main/images/artifect-dependency-check.png)
 <hr>
 
 ### ETAPA 5: ANÁLISE DINÂMICA DE SEGURANÇA  (DAST)
@@ -123,7 +123,7 @@ prometheus-flask-exporter
   
 2. Artefato gerado mostrando as vulnerabilidades e níveis de risco:
 
-![artefact-zed](https://github.com/gustavogss/task-manager/blob/main/images/artefact-zap-attack-tools.png)
+![artefact_zed](https://github.com/gustavogss/task-manager/blob/main/images/artefact-zap-attack-tools.png)
 <hr>
 
 ### ETAPA 6: ENTREGA CONTÍNUA (CD)
@@ -136,7 +136,7 @@ prometheus-flask-exporter
    
 2. Implementação do OWASP ZAP para executar em toda pipeline na homologação: 
 
-![owasp-zap](https://github.com/gustavogss/task-manager/blob/main/images/dast.png)
+![owasp_zap](https://github.com/gustavogss/task-manager/blob/main/images/dast.png)
 
 <hr>
 
@@ -145,7 +145,7 @@ prometheus-flask-exporter
 
 1. Implementação do Prometheus e Grafana na produção:
 
-![prometehues-grafana](https://github.com/gustavogss/task-manager/blob/main/images/grafana-prometheus.png)
+![prometehues_grafana](https://github.com/gustavogss/task-manager/blob/main/images/grafana-prometheus.png)
 
 <br />
    
@@ -193,6 +193,6 @@ done < "$USERNAMES"
    
 4. A pipeline foi testada de ponta a ponta, do desenvolvimento a homologação e produção:
 
-![pipeline-full](https://github.com/gustavogss/task-manager/blob/main/images/pipeline-finished.png)
+![pipeline_full](https://github.com/gustavogss/task-manager/blob/main/images/pipeline-finished.png)
 
 <br />
