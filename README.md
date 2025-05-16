@@ -92,7 +92,7 @@ prometheus-flask-exporter
 
 2. Artefato gerado mostrando dados sensíveis expostos na aplicação:
 
-![artfect-bandit](https://github.com/gustavogss/task-manager/blob/main/images/bandit-artifect.png)
+![artfect-bandit](https://github.com/gustavomob/devsecops-taskmanager/blob/main/images/artefact-zap-attack-tools.png)
 
 <br />
 
