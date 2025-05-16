@@ -134,8 +134,9 @@ prometheus-flask-exporter
 ### ETAPA 7: MONITORAMENTO
 
 1. Implementação do Prometheus e Grafana na produção:
+   
+![grafana-prometheus](https://github.com/user-attachments/assets/b6f2439e-4504-4498-b854-dea651855d26)
 
-![prometheus-grafana](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/grafana-prometheus.png)
 
 2. Implementação do ataque de força bruta em bash:
 
@@ -168,7 +169,8 @@ done < "$USERNAMES"
    
 3. Acompanhamento pelo Grafana com o ataque de bruta force em execução na rota de login:
 
-![monitory](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/monitory.png)
+![monitory](https://github.com/user-attachments/assets/eea67828-4ac5-4fc5-9e40-707d7ce3c3d8)
+
 <hr>
 
 ### ETAPA 8: FEEDBACKS
@@ -180,7 +182,9 @@ done < "$USERNAMES"
 3. Testes funcionais e de integração foram implementados na etapa de homologação 
    
 4. A pipeline foi testada de ponta a ponta, do desenvolvimento a homologação e produção:
+   
+![pipeline-finished](https://github.com/user-attachments/assets/e749eb7a-c885-4e95-b484-d77d6c24cd6d)
 
-![pipeline_full](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/pipeline-finished.png)
+
 
 <br />
