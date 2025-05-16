@@ -53,18 +53,22 @@ prometheus-flask-exporter
 
 1. Implementação do Dockerfile:
 
-![dockerfile](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/dockerfile.png)
+![dockerfile](https://github.com/user-attachments/assets/2c5f592a-185b-4f68-b372-33077d93eed0)
+
 
 2. Aplicação executada na porta 5000:
 
-![app](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/app.png)
+   ![app](https://github.com/user-attachments/assets/815bb208-495e-4b0b-9931-5ea3d2c150e5)
+
+
 <hr>
 
 ### ETAPA 3: IMPLEMENTAÇÃO DE UM PIPELINE CI/CD
 
 1. Implementação do build e deploy na pipeline:
 
-![gitlab](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/gitlabci.png)
+![gitlabci](https://github.com/user-attachments/assets/8d68bae7-73df-4b91-9e75-5c012a159177)
+
 
 2. Pipeline em execução no GitLab:
 
