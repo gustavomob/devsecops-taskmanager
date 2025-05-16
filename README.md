@@ -25,7 +25,7 @@ prometheus-flask-exporter
 
 2. Construir o diagrama para entender o domínio do problema:
 
-![DFD](https://github.com/gustavogss/task-manager/blob/main/images/dfd.png)
+![DFD](https://github.com/gustavomob/task-manager/blob/main/images/dfd.png)
 <hr>
 
 ### ETAPA 2: DESENVOLVIMENTO DO SISTEMA
@@ -52,74 +52,74 @@ prometheus-flask-exporter
 
 1. Implementação do Dockerfile:
 
-![dockerfile](https://github.com/gustavogss/task-manager/blob/main/images/dockerfile.png)
+![dockerfile](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/dockerfile.png)
 
 2. Aplicação executada na porta 5000:
 
-![app](https://github.com/gustavogss/task-manager/blob/main/images/app.png)
+![app](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/app.png)
 <hr>
 
 ### ETAPA 3: IMPLEMENTAÇÃO DE UM PIPELINE CI/CD
 
 1. Implementação do build e deploy na pipeline:
 
-![gitlab](https://github.com/gustavogss/task-manager/blob/main/images/gitlabci.png)
+![gitlab](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/gitlabci.png)
 
 2. Pipeline em execução no GitLab:
 
-![pipeline-initial](https://github.com/gustavogss/task-manager/blob/main/images/pipeline-initial.png)
+![pipeline-initial](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/pipeline-initial.png)
 <hr>
 
 ### ETAPA 4: ANÁLISE ESTÁTICA DE CÓDIGO (SAST)
 
 1. Implementação do Bandit na pipeline:
 
-![bandit](https://github.com/gustavogss/task-manager/blob/main/images/bandit.png)
+![bandit](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/bandit.png)
 
 2. Artefato gerado mostrando dados sensíveis expostos na aplicação:
 
-![artefact_bandit](https://github.com/gustavogss/task-manager/blob/main/images/artefact-zap-attack-tools.png)
+![artefact-bandit](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/artefact-zap-attack-tools.png)
 
 3. Correção no código da falha capturada pelo Bandit:
 
-![fix_bandit](https://github.com/gustavogss/task-manager/blob/main/images/fixenv.png)
+![fix-bandit](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/fixenv.png)
 
 4. Implementação do OWASP Dependency Check na pipeline:
 
-![owasp_dependency_check](https://github.com/gustavogss/task-manager/blob/main/images/owasp-dependecy-check.png)
+![owasp-dependency_check](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/owasp-dependecy-check.png)
 
 5. Artefato gerado com vulnerabilidades no código JavaScript:
 
-![artefact_dependency](https://github.com/gustavogss/task-manager/blob/main/images/artifect-dependency-check.png)
+![artefact-dependency](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/artifect-dependency-check.png)
 <hr>
 
 ### ETAPA 5: ANÁLISE DINÂMICA DE SEGURANÇA (DAST)
 
 1. Foi utilizada a aplicação Zed Attack Proxy (ZAP) para fazer uma varredura rápida na aplicação:
 
-![zed](https://github.com/gustavogss/task-manager/blob/main/images/zap-attack-tools.png)
+![zed](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/zap-attack-tools.png)
 
 2. Artefato gerado mostrando as vulnerabilidades e níveis de risco:
 
-![artefact_zed](https://github.com/gustavogss/task-manager/blob/main/images/artefact-zap-attack-tools.png)
+![artefact-zed](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/artefact-zap-attack-tools.png)
 <hr>
 
 ### ETAPA 6: ENTREGA CONTÍNUA (CD)
 
 1. Implementação da etapa de revisão de código na pipeline:
 
-![review](https://github.com/gustavogss/task-manager/blob/main/images/review-pipeline.png)
+![review](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/review-pipeline.png)
 
 2. Implementação do OWASP ZAP para executar em toda a pipeline na homologação:
 
-![owasp_zap](https://github.com/gustavogss/task-manager/blob/main/images/dast.png)
+![owasp-zap](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/images/dast.png)
 <hr>
 
 ### ETAPA 7: MONITORAMENTO
 
 1. Implementação do Prometheus e Grafana na produção:
 
-![prometheus_grafana](https://github.com/gustavogss/task-manager/blob/main/images/grafana-prometheus.png)
+![prometheus-grafana](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/grafana-prometheus.png)
 
 2. Implementação do ataque de força bruta em bash:
 
@@ -152,7 +152,7 @@ done < "$USERNAMES"
    
 3. Acompanhamento pelo Grafana com o ataque de bruta force em execução na rota de login:
 
-![monitory](https://github.com/gustavogss/task-manager/blob/main/images/monitory.png)
+![monitory](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/monitory.png)
 <hr>
 
 ### ETAPA 8: FEEDBACKS
@@ -165,6 +165,6 @@ done < "$USERNAMES"
    
 4. A pipeline foi testada de ponta a ponta, do desenvolvimento a homologação e produção:
 
-![pipeline_full](https://github.com/gustavogss/task-manager/blob/main/images/pipeline-finished.png)
+![pipeline_full](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/pipeline-finished.png)
 
 <br />
