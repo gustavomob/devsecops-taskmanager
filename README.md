@@ -109,20 +109,24 @@ prometheus-flask-exporter
 
 1. Foi utilizada a aplicação Zed Attack Proxy (ZAP) para fazer uma varredura rápida na aplicação:
 
-![zed](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/zap-attack-tools.png)
+![zap-attack-tools](https://github.com/user-attachments/assets/96d41aad-6ea6-4780-b00f-a0060b2d3ac4)
+
 
 2. Artefato gerado mostrando as vulnerabilidades e níveis de risco:
+   
+![artefact-zap-attack-tools](https://github.com/user-attachments/assets/0484436e-463d-4849-a0ef-25fd2e44ac00)
 
-![artefact-zed](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/artefact-zap-attack-tools.png)
 <hr>
 
 ### ETAPA 6: ENTREGA CONTÍNUA (CD)
 
 1. Implementação da etapa de revisão de código na pipeline:
 
-![review](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/review-pipeline.png)
+![review-pipeline](https://github.com/user-attachments/assets/935989ed-c41e-4851-8707-272e25f47020)
+
 
 2. Implementação do OWASP ZAP para executar em toda a pipeline na homologação:
+
 
 ![owasp-zap](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/images/dast.png)
 <hr>
