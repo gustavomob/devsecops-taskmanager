@@ -25,7 +25,8 @@ prometheus-flask-exporter
 
 2. Construir o diagrama para entender o domínio do problema:
 
-![DFD](https://github.com/gustavomob/devsecops-taskmanager/tree/main/images/dfd.png)
+![dfd](https://github.com/user-attachments/assets/6809cba3-bd94-4042-beb3-96beb5435c44)
+
 <hr>
 
 ### ETAPA 2: DESENVOLVIMENTO DO SISTEMA
